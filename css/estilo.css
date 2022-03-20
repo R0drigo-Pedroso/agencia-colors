@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@600;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px;
+    /**
+    --fontebase: 18px; "declaração de variavel"
+    font-size: var(--fontebase); "recuperação da variavel"
+    */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+img, iframe, video { /*atribuição para ser torna responsivo*/
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem; /*rem - difinição da medida sempre da raiz*/
+}
+
+header {
+    background-color: #fff; 
+    text-align: center;
+    padding-bottom: 15px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+
+    transition: all 0.8s;
+}
+
+nav a:hover {
+    color: rgb(255, 238, 60);
+    background-color: #000; 
+}
+
+main, section {
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /*background: #000;*/
+}
+
+/*esta em todos os elementos*/
+    .conteudo {
+        width: 90%;
+        margin: auto;
+
+        max-width: 800px;
+    }
+
+    .conteudo h1 {
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .conteudo p {
+        line-height: 2rem;
+    }
+
+    .cta {
+        font-family: 'Oswald', sans-serif;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background:rgb(255, 238, 60);
+        padding: 1.15rem 1.18rem;
+        line-height: 5.5rem;
+        color: #000;
+        text-transform: uppercase;
+
+        /*espaçamento entre letras*/
+        letter-spacing: 3px;
+    }
+
+        /*atribuir conteudo antes do elementos ou texto*/
+        .cta::before {
+            content:"+";
+            margin-right: 0.8rem;
+            font-weight: 600;
+        }
+
+        .verde-agua {
+            background-color: #26ccca;
+            color: #fff;
+        }
+/*Final elemento coteudo*/
+
+/*Aplicar imagem no css - realizar configurações*/
+#produto {
+    background-image: url(../imagem/h13-background-img-1-min.jpg);
+    background-size:cover ;
+    background-position-x: center;
+}
+
+#ux {
+    color: #fff;
+    background-image: url(../imagem/h13-background-img-2-min.jpg);
+}
+
+#motion {
+    background-image: url(../imagem/h13-background-img-3-min.jpg);
+    background-size:cover ;
+    background-position-x: center;
+}
+
+#brand {
+    background-image: url(../imagem/h13-background-img-4-min.jpg);
+    color: #fff;
+}
+
+#brand p {
+    color: #B8B8B8;
+}
+
+#print {
+    color: #fff;
+    background-image: url(../imagem/h13-background-img-5-min.jpg);
+    background-size:cover ;
+    background-position-x: center;
+}
+
+
+/*Teste de contraste entre frente e fundo: https://dequeuniversity.com/rules/axe/3.3/color-contrast*/
